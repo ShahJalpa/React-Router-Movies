@@ -1,8 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+//import react router
+import {BrowserRouter as Router } from 'react-router-dom'
+
 import './index.css';
 import App from './App';
 
 // You'll need to wrap <App /> for routing to work
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(
+    <Router>
+        {/*ReactDOM.render(<App />, document.getElementById('root')); -----this was given*/}
+        <App />
+    </Router>,
+    document.getElementById('root')
+);
