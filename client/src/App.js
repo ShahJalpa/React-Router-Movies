@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 //import router
-import {Route} from 'react-router-dom';
+import {Route, Switch} from 'react-router-dom';
 
 import SavedList from './Movies/SavedList';
 //import MovieList
@@ -41,7 +41,7 @@ export default function App () {
         <MovieList movies = {movieList} />
         {/*<div>Replace this Div with your Routes</div> --- this was given*/}
       </Route>
-      <Route path={'/movies/:id'}>
+      <Route path='/movies/:id'>
         <Movie />
       </Route>
       
